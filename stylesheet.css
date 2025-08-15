@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#container {
+    width: 432px;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.firstChild {
+    display: flex;
+    flex-grow: 1;
+}
+
+.secondChild {
+    border: 1px solid black;
+    flex-grow: 1;
+}
