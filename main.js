@@ -27,7 +27,6 @@ function createGrid(gridSize) {
             secondChildDiv.addEventListener('mouseenter', function (event) {
                 event.target.style.backgroundColor = `rgb(${Math.floor(Math.random() * 100 + 1)}%, ${Math.floor(Math.random() * 100 + 1)}%, ${Math.floor(Math.random() * 100 + 1)}%)`;
                 let currentOpacity = parseFloat(window.getComputedStyle(event.target).getPropertyValue("opacity"));
-                if(isNaN(currentOpacity)) currentOpacity = 1;
                 event.target.style.opacity = Math.max(currentOpacity - 0.1, 0);
             })
         }
